@@ -18,11 +18,8 @@ class data
 		 {
 		 	feet=d1.feet +d2.feet;
 		 	inches=d1.inches + d2.inches;
-		 	if(inches>=12)
-		 	{
-		 		feet=feet+1;
-		 		inches=inches-12;
-			 }
+		 	feet=feet+(inches/12);
+		 	inches=inches%12;
 		 }
 		void add_(data *d1,data *d2)
 		 {
